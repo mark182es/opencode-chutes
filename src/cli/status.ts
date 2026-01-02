@@ -2,11 +2,11 @@ import * as fs from 'node:fs';
 import * as path from 'node:path';
 
 export async function status(): Promise<void> {
-  console.log('🐍 chutes-plugin status\n');
+  console.log('🐍 opencode-chutes status\n');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
 
   const projectDir = process.cwd();
-  const pluginFile = path.join(projectDir, '.opencode', 'plugin', 'chutes-plugin.js');
+  const pluginFile = path.join(projectDir, '.opencode', 'plugin', 'opencode-chutes.js');
 
   const hasPlugin = fs.existsSync(pluginFile);
 
@@ -15,7 +15,7 @@ export async function status(): Promise<void> {
     console.log(`Location: ${pluginFile}`);
   } else {
     console.log('\nTo install:');
-    console.log('  bunx chutes-plugin install\n');
+    console.log('  bunx opencode-chutes install\n');
   }
 
   const homeDir = process.env.HOME || process.env.USERPROFILE;

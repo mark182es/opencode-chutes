@@ -1,11 +1,8 @@
 {
-  "name": "chutes-plugin",
+  "name": "opencode-chutes",
   "version": "0.1.12",
-  "description": "Chutes Models plugin for OpenCode - Access 48+ state-of-the-art AI models through the Chutes API",
-  "author": {
-    "name": "Gianmarco Martinelli",
-    "email": "mark182@gmail.com"
-  },
+  "description": "Chutes Models Plugin for OpenCode - Access 58+ state-of-the-art AI models through the Chutes API",
+  "author": "Mark182 <mark182@gmail.com>",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -16,11 +13,11 @@
     }
   },
   "bin": {
-    "chutes-plugin": "bin/chutes-plugin"
+    "opencode-chutes": "bin/chutes-plugin"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zenobi-us/chutes-plugin"
+    "url": "https://github.com/mark182es/opencode-chutes"
   },
   "publishConfig": {
     "access": "public"

@@ -1,5 +1,5 @@
 export async function list(): Promise<void> {
-  console.log('🐍 chutes-plugin models\n');
+  console.log('🐍 opencode-chutes models\n');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
   console.log('Fetching models from Chutes API...\n');
 
@@ -37,7 +37,7 @@ export async function list(): Promise<void> {
 
     console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
     console.log('Tip: To use these models:');
-    console.log('1. Install the plugin: bunx chutes-plugin install');
+    console.log('1. Install the plugin: bunx opencode-chutes install');
     console.log('2. Start OpenCode: opencode');
     console.log('3. Connect token: /connect chutes');
     console.log('4. Select a Chutes model from the dropdown\n');

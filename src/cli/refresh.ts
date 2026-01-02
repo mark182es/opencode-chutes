@@ -1,5 +1,5 @@
 export async function refresh(): Promise<void> {
-  console.log('🐍 chutes-plugin refresh\n');
+  console.log('🐍 opencode-chutes refresh\n');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
   console.log('Refreshing model cache...\n');
 

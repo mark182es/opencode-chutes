@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export async function install(): Promise<void> {
-  console.log('🐍 chutes-plugin installer\n');
+  console.log('🐍 opencode-chutes installer\n');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
 
   const projectDir = process.cwd();
@@ -51,12 +51,12 @@ export async function install(): Promise<void> {
 
   if (installTarget === 'project') {
     pluginDir = projectPluginDir;
-    pluginFile = path.join(pluginDir, 'chutes-plugin.js');
-    console.log('\nInstalling chutes-plugin to project...\n');
+    pluginFile = path.join(pluginDir, 'opencode-chutes.js');
+    console.log('\nInstalling opencode-chutes to project...\n');
   } else {
     pluginDir = globalPluginDir;
-    pluginFile = path.join(pluginDir, 'chutes-plugin.js');
-    console.log('\nInstalling chutes-plugin globally...\n');
+    pluginFile = path.join(pluginDir, 'opencode-chutes.js');
+    console.log('\nInstalling opencode-chutes globally...\n');
   }
 
   console.log('Creating plugin directory...\n');

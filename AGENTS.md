@@ -63,10 +63,10 @@
 ## Directory Structure
 
 ```
-chutes-plugin/
+opencode-chutes/
 ├── src/
 │   ├── index.ts              # Main plugin entry point (ChutesPlugin)
-│   ├── cli/                  # CLI commands for bunx chutes-plugin
+│   ├── cli/                  # CLI commands for bunx opencode-chutes
 │   │   ├── index.ts          # CAC CLI entry point
 │   │   ├── install.ts        # install command (project/global)
 │   │   ├── status.ts         # status command
@@ -98,7 +98,7 @@ chutes-plugin/
 │   ├── tools/                # Compiled tools
 │   └── config/               # Compiled config
 ├── bin/
-│   └── chutes-plugin         # CLI wrapper script
+│   └── opencode-chutes       # CLI wrapper script
 └── test-local.ts             # Local API integration test
 ```
 
@@ -108,7 +108,7 @@ chutes-plugin/
 | ------------------- | -------------- | --------------------------------- |
 | `dist/index.js`     | Compiled (tsc) | Published to npm, uses ES imports |
 | `dist/bundle.js`    | Bundled (bun)  | Local file-based install          |
-| `dist/cli/index.js` | Bundled CLI    | Used by bunx chutes-plugin        |
+| `dist/cli/index.js` | Bundled CLI    | Used by bunx opencode-chutes      |
 
 ## Local Development
 
@@ -123,7 +123,7 @@ chutes-plugin/
 2. Copy to test project:
 
    ```bash
-   cp dist/bundle.js /path/to/test-project/.opencode/plugin/chutes-plugin.js
+   cp dist/bundle.js /path/to/test-project/.opencode/plugin/opencode-chutes.js
    ```
 
 3. Run OpenCode:
@@ -136,10 +136,10 @@ chutes-plugin/
 
 ```bash
 # Test from local source
-node bin/chutes-plugin install
+node bin/opencode-chutes install
 
 # Test via bunx
-bunx chutes-plugin@latest install
+bunx opencode-chutes@latest install
 ```
 
 ### NPM Publishing
@@ -164,7 +164,7 @@ npm publish
 
 ```json
 {
-  "plugin": ["chutes-plugin"],
+  "plugin": ["opencode-chutes"],
   "provider": {
     "chutes": {
       "options": {

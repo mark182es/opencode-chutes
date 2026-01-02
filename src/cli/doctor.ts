@@ -2,7 +2,7 @@ import * as fs from 'node:fs';
 import * as path from 'node:path';
 
 export async function doctor(): Promise<void> {
-  console.log('🐍 chutes-plugin doctor\n');
+  console.log('🐍 opencode-chutes doctor\n');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
 
   let checks = 0;
@@ -20,14 +20,14 @@ export async function doctor(): Promise<void> {
   }
 
   const projectDir = process.cwd();
-  const pluginFile = path.join(projectDir, '.opencode', 'plugin', 'chutes-plugin.js');
+  const pluginFile = path.join(projectDir, '.opencode', 'plugin', 'opencode-chutes.js');
   const hasPlugin = fs.existsSync(pluginFile);
 
   console.log('Installation Checks:\n');
   check(
     'Plugin installed',
     hasPlugin,
-    hasPlugin ? `Location: ${pluginFile}` : 'Run: bunx chutes-plugin install'
+    hasPlugin ? `Location: ${pluginFile}` : 'Run: bunx opencode-chutes install'
   );
 
   console.log('\nAPI Checks:\n');
@@ -73,7 +73,7 @@ export async function doctor(): Promise<void> {
   console.log(`Results: ${passed}/${checks} checks passed\n`);
 
   if (passed === checks) {
-    console.log("🎉 Everything looks good! You're ready to use chutes-plugin.\n");
+    console.log("🎉 Everything looks good! You're ready to use opencode-chutes.\n");
   } else {
     console.log('⚠️  Some checks failed. Please address the issues above.\n');
   }

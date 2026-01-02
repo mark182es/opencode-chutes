@@ -1,15 +1,15 @@
 import cac from 'cac';
 
-const cli = cac('chutes-plugin');
+const cli = cac('opencode-chutes');
 
 cli.version('0.1.0');
 cli.usage(`
-🐍 chutes-plugin
+🐍 opencode-chutes
 
 A plugin for OpenCode that provides access to 58+ state-of-the-art AI models through the Chutes API.
 
 Usage:
-  $ chutes-plugin <command>
+  $ opencode-chutes <command>
 
 Commands:
   install    Install the plugin to the current project (.opencode/plugin/)
@@ -19,11 +19,11 @@ Commands:
   doctor     Verify that everything is configured correctly
 
 Examples:
-  $ chutes-plugin install
-  $ chutes-plugin status
-  $ chutes-plugin list
-  $ chutes-plugin refresh
-  $ chutes-plugin doctor
+  $ opencode-chutes install
+  $ opencode-chutes status
+  $ opencode-chutes list
+  $ opencode-chutes refresh
+  $ opencode-chutes doctor
 `);
 
 cli.command('install', 'Install the plugin to the current project').action(async () => {

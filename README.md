@@ -1,4 +1,4 @@
-# chutes-plugin
+# opencode-chutes
 
 Chutes Models Plugin for OpenCode - Access 58+ state-of-the-art AI models through the Chutes API.
 
@@ -11,7 +11,7 @@ Chutes Models Plugin for OpenCode - Access 58+ state-of-the-art AI models throug
 - **Conflict-Free Naming**: All models prefixed with `chutes/` to avoid conflicts
 - **Intelligent Caching**: Model metadata cached for performance (1 hour TTL)
 - **Comprehensive Tools**: `chutes_list_models`, `chutes_refresh_models`, `chutes_status`
-- **CLI Support**: Install and manage the plugin with `bunx chutes-plugin`
+- **CLI Support**: Install and manage the plugin with `bunx opencode-chutes`
 
 ## Available Models
 
@@ -46,7 +46,7 @@ The plugin provides access to models including:
 ### Option 1: Using bunx (Recommended)
 
 ```bash
-bunx chutes-plugin@latest install
+bunx opencode-chutes@latest install
 ```
 
 This will install the plugin to your project (`.opencode/plugin/`) or globally based on your preference.
@@ -57,23 +57,23 @@ Copy the bundled plugin to your OpenCode plugin directory:
 
 ```bash
 # Project-level
-cp dist/bundle.js /path/to/your/project/.opencode/plugin/chutes-plugin.js
+cp dist/bundle.js /path/to/your/project/.opencode/plugin/opencode-chutes.js
 
 # Global
-cp dist/bundle.js ~/.config/opencode/plugin/chutes-plugin.js
+cp dist/bundle.js ~/.config/opencode/plugin/opencode-chutes.js
 ```
 
 ### Option 3: npm (Coming Soon)
 
 ```bash
-npm install chutes-plugin
+npm install opencode-chutes
 ```
 
 Then add to your `opencode.json`:
 
 ```json
 {
-  "plugin": ["chutes-plugin"]
+  "plugin": ["opencode-chutes"]
 }
 ```
 
@@ -85,7 +85,7 @@ Create or edit `opencode.json` in your project:
 
 ```json
 {
-  "plugin": ["chutes-plugin"],
+  "plugin": ["opencode-chutes"],
   "provider": {
     "chutes": {
       "options": {
@@ -175,19 +175,19 @@ The plugin includes a CLI for management:
 
 ```bash
 # Install the plugin
-bunx chutes-plugin install
+bunx opencode-chutes install
 
 # Check plugin status
-bunx chutes-plugin status
+bunx opencode-chutes status
 
 # List available models
-bunx chutes-plugin list
+bunx opencode-chutes list
 
 # Refresh model cache
-bunx chutes-plugin refresh
+bunx opencode-chutes refresh
 
 # Health check
-bunx chutes-plugin doctor
+bunx opencode-chutes doctor
 ```
 
 ## Model Pricing
