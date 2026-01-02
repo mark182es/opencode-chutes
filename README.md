@@ -334,7 +334,7 @@ Mark182 <mark182@gmail.com>
 
 ## Repository
 
-https://github.com/zenobi-us/opencode-chutes
+https://github.com/mark182es/opencode-chutes
 
 ## Chutes API
 
