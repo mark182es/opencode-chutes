@@ -1,6 +1,6 @@
 {
   "name": "opencode-chutes",
-  "version": "0.1.12",
+  "version": "0.1.14",
   "description": "Chutes Models Plugin for OpenCode - Access 58+ state-of-the-art AI models through the Chutes API",
   "author": "Mark182 <mark182@gmail.com>",
   "type": "module",
@@ -13,7 +13,7 @@
     }
   },
   "bin": {
-    "opencode-chutes": "bin/chutes-plugin"
+    "opencode-chutes": "bin/opencode-chutes"
   },
   "repository": {
     "type": "git",
